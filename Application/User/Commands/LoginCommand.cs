@@ -12,6 +12,7 @@ namespace Application.User.Commands
     public class LoginCommand : IRequest<Result<string>>
     {
         public string Username { get; set; } = string.Empty;
-        public string HashedPassword { get; set; } = string.Empty; // Change to accept hashed password
+        public string HashedPassword { get; set; } = string.Empty;
     }
+
 }

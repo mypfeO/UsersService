@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l4lasnujEoqCZqMP01hwAN8m5GHxXSRQgKyM9X97+WIKNb1ciL5QzgQt0RFw+opmYAZnLsvdoE8JHbpOmuFoHA==",
+  "dgSpecHash": "P0Fwp5qZaBLwTle7AP17Hs+aMY392PtWb8jbleZEzSXbdRM2XdYKnsebprbjwW5is+ePkKF9CZOV62SJeewl/w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ELMEHDI\\source\\repos\\School\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\ELMEHDI\\source\\repos\\Users\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ELMEHDI\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\ELMEHDI\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",

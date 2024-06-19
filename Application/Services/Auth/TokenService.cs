@@ -30,9 +30,9 @@ namespace Application.Services.Auth
             {
                 Subject = new ClaimsIdentity(new[]
                 {
-            new Claim(ClaimTypes.Name, user.Username),
-            // Ajoutez d'autres claims au besoin
-        }),
+                new Claim(ClaimTypes.Name, user.Username),
+                new Claim("UserId", user.Id.ToString()) // Include User ID
+            }),
                 Expires = DateTime.UtcNow.AddHours(Convert.ToDouble(_configuration["Jwt:LifetimeHours"])),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
@@ -40,12 +40,7 @@ namespace Application.Services.Auth
             var token = tokenHandler.CreateToken(tokenDescriptor);
             var tokenString = tokenHandler.WriteToken(token);
 
-            Console.WriteLine($"Token généré : {tokenString}"); // Imprimez le token à des fins de débogage
-
             return tokenString;
         }
-
-
-
     }
 }

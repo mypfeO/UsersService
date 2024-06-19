@@ -44,7 +44,7 @@ namespace Application.User.Handlers
             {
                 Username = request.Username,
                 PasswordHash = request.Password,
-                Role = request.Role,
+             
             };
 
             // Enregistrez le nouvel utilisateur
